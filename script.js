@@ -1,4 +1,4 @@
-
+let tentatives = Number(localStorage.getItem("tentatives")) || 0;
 console.log("Script chargé");
 
 emailjs.init("OdVrpD_0CpgUT6Ahz");
