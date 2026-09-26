@@ -143,3 +143,149 @@ button {
 .btn-valider:hover {
   background: var(--dark-blue-hover);
 }
+
+
+/* =====================================================
+   RESPONSIVE UNIQUEMENT
+   ===================================================== */
+
+/* Tablettes */
+@media (max-width: 768px) {
+
+  body {
+    padding: 12px 18px;
+  }
+
+  .page {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  form label,
+  form .hint,
+  form .actions,
+  .g-recaptcha {
+    width: 70%;
+  }
+
+  .actions {
+    width: 70%;
+  }
+}
+
+
+/* Téléphones */
+@media (max-width: 600px) {
+
+  body {
+    padding: 10px 14px;
+  }
+
+  .page {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .info-box {
+    padding: 16px 18px;
+    font-size: 0.95rem;
+  }
+
+  form label,
+  form .hint,
+  form .actions,
+  .g-recaptcha {
+    width: 90%;
+  }
+
+  .actions {
+    width: 90%;
+    gap: 10px;
+  }
+
+  /* Adaptation de l'espacement des champs */
+  .code-group {
+    gap: 10px;
+  }
+}
+
+
+/* Petits téléphones */
+@media (max-width: 400px) {
+
+  body {
+    padding: 8px 10px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .info-box {
+    padding: 14px 15px;
+    font-size: 0.9rem;
+  }
+
+  .code-group {
+    gap: 6px;
+  }
+
+  .code-group input {
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    height: 48px;
+  }
+
+  form label,
+  form .hint,
+  form .actions,
+  .g-recaptcha {
+    width: 100%;
+  }
+
+  .actions {
+    width: 100%;
+    gap: 8px;
+  }
+
+  button {
+    font-size: 0.95rem;
+    padding: 11px 0;
+  }
+}
+
+
+/* Très petits écrans */
+@media (max-width: 340px) {
+
+  h1 {
+    font-size: 1.45rem;
+  }
+
+  .info-box {
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+
+  .code-group {
+    gap: 4px;
+  }
+
+  .code-group input {
+    width: 55px;
+    min-width: 55px;
+    max-width: 55px;
+    height: 45px;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
